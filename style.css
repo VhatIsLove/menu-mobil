@@ -1,0 +1,147 @@
+@font-face{
+	font-family: "Lakes";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/TTLakes-Bold.woff") format("woff2");
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "Lakes";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/TTLakes-Medium.woff") format("woff2");
+	font-display: swap;
+}
+
+.page{
+    font-family: 'Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+}
+
+.wrepper-position{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    padding: 0 24px;
+    float: left;
+    box-shadow: 16px 0 52px 10px #0E185033;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 19px;
+    margin-bottom: 50px;
+    line-height: 0;
+    word-spacing: -5px;
+}
+
+.button{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+	margin-right: 17px;
+    background: #FF3E79;
+    border-radius: 50%;
+	padding: 0;
+    border: none;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+    transition: 0.3s;
+    vertical-align: super;
+}
+
+.button:hover{
+    background-color: #fd3045;
+    box-shadow: 0 0 10px 6px #ec5d88d4;
+}
+
+.button--burger{
+	background-image: url('images/icon-burger.svg');
+}
+
+.button--serch{
+	background-image: url('images/icon-serch.svg');
+    margin: 0;
+}
+
+.link-logo{
+    display: inline-block;
+    margin-right: 77px;
+}
+
+.main__item{
+    margin-bottom: 32px;
+}
+
+.main__item--active a{
+    color: #7E7E82;
+}
+
+.main__item--active{
+    position: relative;
+}
+
+.main__item--active::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    top: -4px;
+    left: -25px;
+    background-color: #41F6D7;
+    border-radius: 3px;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+.footer__list{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+    margin-bottom: 16px;
+}
+
+.button--phon{
+	background-image: url('images/icon-phon.svg');
+}
+
+.button--chat{
+	background-image: url('images/icon-chat.svg');
+}
+
+.button--profel{
+	background-image: url('images/icon-profel.svg');
+}
+
+.footer__link{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer__phon{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer__list-leng{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.footer__item-leng{
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+
+.footer__item-leng--active{
+    color: #7E7E82;
+}
